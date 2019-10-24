@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script>
+        let navContainer = document.getElementsByClassName('navContainer');
+        window.onscroll = function () {
+            "use strict";
+            if (document.body.scrollTop >= 5) {
+                navContainer.classList.add("nav-colored");
+                navContainer.classList.remove("nav-transparent");
+            }
+            else {
+                navContainer.classList.add("nav-transparent");
+                navContainer.classList.remove("nav-colored");
+            }
+        };
+    </script>
+    <script src="https://kit.fontawesome.com/7fdd31817d.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="image-container">
+        <header>
+            <div class="navContainer" id="navContainer">
+                <div class="logo">
+                    <h4>Start Bootstrap</h4>
+                </div>
+                <nav>
+                    <ul>
+                        <li>SERVICES</li>
+                        <li>PORTFOLIO</li>
+                        <li>ABOUT</li>
+                        <li>TEAM</li>
+                        <li>CONTACT</li>
+                    </ul>
+                    <button class="menu">MENU<i class="fas fa-bars"></i></button>
+                </nav>
+            </div>
+        </header>
+        <br>
+        <br>
+        <div class="textbox">
+            <h2>Welcome To Our Studio!</h2>
+            <h1>IT'S NICE TO MEET YOU</h1>
+            <button class="btn">TELL ME MORE</button>
+        </div>
+    </div>
+    <div class="services-container">
+        <h3>SERVICES</h3>
+        <p>Lorem Ipsum Dolor Sit Amet Consectetur</p>
+        <div class="service-box">
+            <div class="left-box"><i class="fas fa-shopping-cart"></i>
+                <div class="left-circle"></div>
+                <h5>E-Commerce</h5>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur omnis voluptate, alias excepturi perferendis eaque suscipit temporibus non officiis quam neque ipsa vitae maiores animi fugiat explicabo totam recusandae nesciunt.</p>
+            </div>
+            <div class="middle-box"><i class="fas fa-laptop"></i>
+                <div class="middle-circle"></div>
+                <h5>Responsive Design</h5>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam saepe sed quas molestiae eaque facilis inventore neque optio ipsum dolore ad quod ducimus unde alias id, illum quibusdam in amet?</p>
+            </div>
+            <div class="right-box"><i class="fas fa-lock"></i>
+                <div class="right-circle"></div>
+                <h5>Web Security</h5>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero quibusdam eligendi enim, saepe officia fugit suscipit quisquam incidunt, qui neque harum accusantium unde, doloribus dolor voluptatibus nam. Quaerat, fuga cupiditate.</p>
+            </div>
+        </div>
+        
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
